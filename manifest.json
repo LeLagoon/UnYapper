@@ -1,0 +1,10 @@
+{
+    "name" : "UnYapper",
+    "description" : "Summarize huge texts into simple sentences",
+    "version" : "1.0",
+    "manifest_version" : 3,
+    "action" : {
+        "default_popup" : "main.html",
+        "default_icon" : "default_icon.png"
+    }
+}
