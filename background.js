@@ -17,6 +17,14 @@ chrome.contextMenus.onClicked.addListener((info,tab) => {
 
 function getSelectedText() {
     let text = window.getSelection().toString()
-    if (text) 
-    { alert(`You selected: ${text}`); } 
+    if(text)
+    alert(text)
+    chrome.storage.sync.set({'selected-text': text})
+    // chrome.runtime.sendMessage({
+    //     msg: "selected",
+    //     data: {
+    //         subject : "Message",
+    //         content : text
+    //     }
+    // });
 }
