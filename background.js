@@ -20,6 +20,7 @@ function getSelectedText() {
     if(text)
     alert(text)
     chrome.storage.sync.set({'selected-text': text})
+}
     // chrome.runtime.sendMessage({
     //     msg: "selected",
     //     data: {
@@ -27,4 +28,3 @@ function getSelectedText() {
     //         content : text
     //     }
     // });
-}
