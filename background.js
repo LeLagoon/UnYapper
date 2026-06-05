@@ -21,6 +21,7 @@ function getSelectedText() {
     alert(text)
     chrome.storage.sync.set({'selected-text': text})
 }
+
     // chrome.runtime.sendMessage({
     //     msg: "selected",
     //     data: {
