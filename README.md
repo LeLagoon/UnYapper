@@ -1,13 +1,13 @@
-## UnYapper
+# UnYapper
 
 An extension that summarizes text
 
-# Description
+## Description
 Ever faced a enormous and scary text that you really didn't want to read? This is a chrome extension that's used to __summarize all the yap__ and provide it in a __concise manner__ for you to understand things simply. 
 
 ![alt text](<final extension.png>)
 
-# Instructions
+## Instructions
 1. Enable developer mode on chrome://extensions
 2. Load the extension
 3. Enable it and pin it
@@ -18,9 +18,7 @@ Ever faced a enormous and scary text that you really didn't want to read? This i
 8. Open the popup and wait for a few seconds
 9. And boom! You're done. Read away all you want
 
-If you have any doubts, check out the demo video
+If you have any doubts, check out the [demo video](https://cdn.hackclub.com/019e9ec6-25e9-7fcb-b337-4e167826eb33/2026-06-07_02-34-54.mp4)
 
-<video controls src="2026-06-07 02-34-54.mov" title="Demo Video"></video>
-
-# Use of AI
+## Use of AI
 Used google's AI overview for debugging at some points
