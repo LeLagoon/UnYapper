@@ -3,7 +3,7 @@
 An extension that summarizes text
 
 ## Description
-Ever faced a enormous and scary text that you really didn't want to read? This is a chrome extension that's used to __summarize all the yap__ and provide it in a __concise manner__ for you to understand things simply. 
+Ever faced an enormous and scary text that you really didn't want to read? This is a chrome extension that's used to __summarize all the yap__ and provide it in a __concise manner__ for you to understand things simply. 
 
 ![alt text](<final extension.png>)
 
