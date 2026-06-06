@@ -18,7 +18,6 @@ chrome.contextMenus.onClicked.addListener((info,tab) => {
 function getSelectedText() {
     let text = window.getSelection().toString()
     if(text)
-    alert(text)
     chrome.storage.sync.set({'selected-text': text})
 }
 

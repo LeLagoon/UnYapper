@@ -44,7 +44,7 @@ async function PromptAI () {
                     content: [
                     {
                         type: 'input_text',
-                        text: "Summarize all this text into a concatenated format ina few important pointers :- "+output,
+                        text: "Please summarize the provided text into a highly concise format that highlights the most important pointers. CRITICAL LENGTH CONSTRAINT: > Your final response MUST absolutely be less than 40% of the length of the provided text. To ensure you do not fail this constraint: Internally calculate the approximate word count of the provided text. Calculate 40% of that number to find your strict maximum word limit. Ruthlessly edit your summary so it falls well below this ceiling. Shorter is always better. CRITICAL FORMATTING CONSTRAINTS: > - NO MARKDOWN: Do not use any Markdown formatting whatsoever (no asterisks for bolding, no hash symbols for headers, no backticks, etc.). HTML ONLY: You must output your entire response strictly in valid HTML format. Use standard HTML tags (such as <p>, <ul>, <li>, <b>, <br>) to structure the summary. Text to summarize:" +output,
                     },
                     ],
                 },
@@ -55,7 +55,10 @@ async function PromptAI () {
 
     const result = await response.json();
     console.log(result)
+    let reply = result.output[0].content[0].text;
+    document.getElementById("output").innerHTML = reply;
 }
+
 
 // async function PromptAI () {
 //     const response = await fetch("https://ai.hackclub.com/proxy/v1/responses", {
